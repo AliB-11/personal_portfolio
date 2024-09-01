@@ -4,8 +4,7 @@ import { BsHouse, BsFileEarmark } from "react-icons/bs";
 import { LuUser2, LuMail} from "react-icons/lu";
 import LogoS from '../../assets/images/logo-s.png'
 import { GoProject } from "react-icons/go";
-import { FaLinkedin} from "react-icons/fa6";
-import { IoLogoGithub } from "react-icons/io";
+
 
 
 import React from 'react'
@@ -13,8 +12,8 @@ import React from 'react'
 const MainNavBar = () => {
   return (
     <> 
-     <Link className='logo' to="/">
-        <img src={LogoS} alt='logo'/>
+     <Link className='logo' to="/" >
+        <img src={LogoS} className='logo' alt='logo'/>
       </Link>
 
     <div className='wrapper'>
@@ -67,22 +66,6 @@ const MainNavBar = () => {
         </li>
       </ul>
     </nav>
-
-    <ul className='navigation-buttons'> 
-
-      <li className='links'> 
-        <a target='_blank' rel='noreferrer' href='' className='media-link'> 
-        <FaLinkedin color='#ffffff' size={22} className='linkedin' />
-        </a>
-      </li>
-      
-      <li className='links'>
-        <a target='_blank' rel='noreferrer' href='' className='media-link'>
-        <IoLogoGithub color='#ffffff' size={22} className='github'/>
-        </a>
-      </li>
-
-    </ul>
   </div>
 
     </>

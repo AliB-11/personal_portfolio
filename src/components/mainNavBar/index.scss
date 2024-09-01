@@ -1,7 +1,11 @@
   .wrapper { 
    position: absolute; 
+   margin-bottom: 50px;
    top: 15%;
    left: 10%;
+   bottom: 10%;
+   right: 10%;
+   animation: fadeIn 1s 0.7s backwards;
 
   }
 
@@ -36,14 +40,16 @@
 .logo { 
   display: block;
   position: relative;
+  top: 10px;
 
 
 
   img {
     display: block; 
-    width: 24px; 
+    width: 50px; 
     margin: 10px 10px;
-    height: auto;;
+    height:  42px;
+    
   }
 
 }
@@ -124,3 +130,7 @@ a.active {
   margin-top: 3px;
 }
 
+.contact-options{
+  position: relative;
+  top: 40%;
+}
