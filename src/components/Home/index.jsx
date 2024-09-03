@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import './index.scss'
 import { FaLinkedin} from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import AnimatedLetters from '../AnimatedLetters';
-
-
+import HomeNavBar from '../homeNavBar';
+import { Link } from 'react-router-dom';
+import LogoS from '../../assets/images/logo-s.png'
 
 
 const Home = () => {
@@ -27,7 +27,10 @@ const Home = () => {
  
   return (
     <>
-   
+    <Link className='logo-main' to="/" >
+      <img src={LogoS} className='logo-main' alt='logo'/>
+    </Link>
+    <HomeNavBar/>
     <div className='container home-page'>
       <div className="text-zone">
         <h1> 
@@ -46,17 +49,18 @@ const Home = () => {
         <ul className='navigation-buttons contact-options'> 
           <li className='links'> 
             <a target='_blank' rel='noreferrer' href='' className='media-link'> 
-            <FaLinkedin color='#ffffff' size={22} className='linkedin' />
+            <FaLinkedin size={25} className='linkedin' />
             </a>
           </li>
           <li className='links'>
             <a target='_blank' rel='noreferrer' href='' className='media-link'>
-            <IoLogoGithub color='#ffffff' size={22} className='github'/>
+            <IoLogoGithub size={28} className='github'/>
             </a>
           </li>
       </ul>
     </div>
   </div>
+ 
   </>
   )
 }

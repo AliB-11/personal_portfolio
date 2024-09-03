@@ -92,7 +92,7 @@ const ParticlesComponent = (props) => {
           "random": true,
           "straight": false,
           "out_mode": "out",
-          "bounce": true,
+          "bounce": false,
           "attract": {
             "enable": false,
             "rotateX": 600,
@@ -108,10 +108,10 @@ const ParticlesComponent = (props) => {
             "mode": "bubble"
           },
           "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "repulse"
           },
-          "resize": true
+          "resize": false
         },
         "modes": {
           "grab": {
