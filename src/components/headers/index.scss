@@ -1,0 +1,29 @@
+h1{
+  font-size: 35px;
+  font-family: 'Poppins';
+  color: #e6ab24;
+  font-weight: 500;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+h1::before{
+  content: '';
+  position: absolute;
+  left: 0; 
+  top: 0;
+  height: 1.8px;
+  width: 60%;
+  transform: scaleX(0);
+  transition: transform 1s ease;
+  transform-origin: top left;
+  background: #e6ab24;
+  margin-right: 300px;
+  
+ 
+}
+
+h1.loaded::before{
+  transform: scaleX(1);
+}

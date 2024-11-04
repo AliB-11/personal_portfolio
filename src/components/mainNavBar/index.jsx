@@ -9,8 +9,8 @@ import LogoS from '../../assets/images/logo-s.png'
 
 const MainNavBar = () => {
   return (
-    <>
-      <div className='main-nav-bar'> </div>
+    <div className='nav-bar-holder'>
+      <div className='main-nav-bar'> </div> 
         <nav> 
           <ul className='main-nav-buttons'> 
             <li> 
@@ -62,7 +62,7 @@ const MainNavBar = () => {
       <Link className='logo-main' to="/" >
         <img src={LogoS} className='logo-main' alt='logo'/>
      </Link>
-    </>
+    </div>
   )
 }
 
