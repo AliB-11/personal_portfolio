@@ -1,5 +1,4 @@
 
-
 .projects-section h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -47,6 +46,21 @@
 .project-card h3 {
   margin: 20px 0 10px;
   font-size: 1.5rem;
+}
+
+.project-title{
+  margin-top: 10px;
+  color: #e6ab24;
+  font-style: 'Poppins';
+  font-size: 20px;
+}
+
+.project-text{
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 12px;
+  font-style: 'Poppins';
 }
 
 .project-card p {

@@ -9,6 +9,13 @@
 
   }
 
+  .hamburger-icon, .close-icon{
+    display: none;
+  }
+
+  .wrappers{
+    display: none;
+  }
 
 .navigation-buttons{
   height: 50px;  
@@ -30,7 +37,7 @@
   flex-direction: row;
   width: auto;
   height: 50px;
-  margin-right: 50px;
+  margin-right: 70px;
   align-items: center;
  
   
@@ -95,4 +102,74 @@ a.active {
 .contact-options{
   position: relative;
   top: 40%;
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon, .close-icon{
+    display: block;
+    position: absolute;
+    top: 2.5%;
+    background-color: transparent;
+    color: white;
+    right: 2%;
+    border-style: none;
+    z-index: 997;
+  }
+
+  .wrapper{
+    display: none;
+  }
+
+  .wrappers{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    
+    
+  }
+
+  .navigation-button{
+    
+    
+    display: flex;
+    z-index: 997;
+    padding: 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    list-style-type: none;
+    
+    
+  }
+
+  .nav-label{ 
+    z-index: 997;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 55px;
+    margin-right: 20px;
+    align-items: center;
+    
+   
+   
+    
+  }
+
+  .hamburger-background{
+    position: fixed; /* Position it fixed to cover the entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 995;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+
+ 
 }

@@ -48,15 +48,6 @@ const MainNavBar = () => {
               </div>
             </NavLink>
           </li>
-
-          <li>
-            <NavLink exact="true" activeclassname="active" to="/Resume">
-              <div className="nav-label">
-                <BsFileEarmark color='white' size={20} className='nav-icons'/>
-                <span className='headers'>Resume</span>
-              </div>
-            </NavLink>
-          </li>
         </ul>
       </nav>
       <Link className='logo-main' to="/" >
@@ -67,3 +58,18 @@ const MainNavBar = () => {
 }
 
 export default MainNavBar
+
+/* 
+Resume navlink 
+
+ <li>
+    <NavLink exact="true" activeclassname="active" to="/Resume">
+      <div className="nav-label">
+        <BsFileEarmark color='white' size={20} className='nav-icons'/>
+        <span className='headers'>Resume</span>
+      </div>
+    </NavLink>
+  </li>
+
+
+*/
