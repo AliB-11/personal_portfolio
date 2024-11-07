@@ -1,0 +1,74 @@
+
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Flexbox container for project cards */
+.projects-container {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 25%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;                
+  justify-content: center;  
+  max-width: 1200px;        
+  margin: 0 auto;         
+  width: 100%;
+              
+  box-sizing: border-box;    
+}
+
+/* Style for each project card */
+.project-card {
+  width: 100%;
+  max-width: 350px; 
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+  width: 350px; 
+  height: 350px; 
+  object-fit: fill;  
+  border-radius: 5px 5px 0 0;  
+}
+
+.project-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  padding: 0 10px 20px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 45%; /* Adjust width for tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Stack projects on mobile */
+  }
+}

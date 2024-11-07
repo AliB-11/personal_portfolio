@@ -8,10 +8,12 @@ const About = () => {
   
   return (
     <div className='about-page'> 
-    <div className="text-zone">
-      <PageHeader>About</PageHeader>
-    </div>
-    <MainNavBar/>
+      <div className="fade">
+        <MainNavBar/>
+         <div className="text-zone">
+          <PageHeader>About</PageHeader>
+        </div>
+      </div>
     </div>
   )
 }

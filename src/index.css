@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   height: 100%;
   color: #444;
-  overflow: hidden;
+  overflow: auto;
   display: block;
   font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
 }

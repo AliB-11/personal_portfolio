@@ -1,0 +1,105 @@
+
+
+
+  
+  
+  .contact-container{
+    
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    right: 5%;
+   
+ 
+  
+  }
+
+  .contact-box{
+     height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    }
+
+.contact-text{
+  height: 120px;
+  padding: 1px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+    
+}
+
+.contact-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.email-title{
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.email-logo{
+  font-size: 22px;
+    color: #e6ab24;
+    border-radius: 25%;
+    padding: 5px;
+  
+    background: rgba(255, 255, 255, 0.1);
+  
+}
+
+.contact-body{
+
+  .email-link{
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}
+
+
+
+.email-link:hover{
+  color: #e6ab24;
+}
+
+
+.github-logo{
+  font-size: 20px;
+    color: #e6ab24;
+    border-radius: 25%;
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.1);
+  
+}
+
+.github-logo:hover{
+  color: white;
+}
+
+.social-contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 20px;
+  
+}
+
+.social-text{
+  margin-right: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+}
+

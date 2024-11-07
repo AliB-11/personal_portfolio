@@ -14,7 +14,7 @@ const PageHeader = ({children}) => {
     // Simulate the load event by setting loaded to true after a short delay
     const timer = setTimeout(() => {
         setLoaded(true);
-    }, 0); 
+    }, 350); 
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
 }, [location]); // Trigger effect on location change

@@ -48,12 +48,12 @@ const Home = () => {
         </h3>
         <ul className='navigation-buttons contact-options'> 
           <li className='links'> 
-            <a target='_blank' rel='noreferrer' href='' className='media-link'> 
+            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/ali-bandali-395491307/' className='media-link'> 
             <FaLinkedin size={25} className='linkedin' />
             </a>
           </li>
           <li className='links'>
-            <a target='_blank' rel='noreferrer' href='' className='media-link'>
+            <a target='_blank' rel='noreferrer' href='https://github.com/AliB-11' className='media-link'>
             <IoLogoGithub size={28} className='github'/>
             </a>
           </li>
