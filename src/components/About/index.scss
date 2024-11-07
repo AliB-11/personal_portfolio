@@ -11,6 +11,156 @@
 
 }
 
+
 .fade{
   animation: fadeIn 1s 0.2s backwards;
+}
+
+.image{
+  height: 40px;
+  width: 40px;
+}
+
+.coding-chart{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+
+.top-chart{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: start;
+  
+}
+
+.bottom-chart{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+
+
+.tech-stack-container {
+  display: flex;
+  justify-content: space-between; /* Ensures the containers are side by side */
+  gap: 20px;  /* Adds space between the flexboxes */
+  width: 90%;  /* Take up full width */
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  
+}
+
+/* Apply background color only to the first flexbox */
+.languages {
+  background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
+  padding: 40px 0px 40px 40px;
+  width: 40%;  /* Each flexbox takes 48% of the container's width */
+  box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+.subtitle {
+  margin-bottom: 35px;
+  font-size: 23px;
+  color: #e6ab24;
+}
+
+.coding-chart {
+  display: flex;
+  flex-direction: column;  /* Stack the items vertically */
+  gap: 20px;
+  align-items: start;
+  justify-content: start;
+}
+
+.label {
+  color: white;
+  font-size: 16px;
+}
+
+.code {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+}
+
+.mongo {
+  margin-left: -5px;
+}
+
+.mongol {
+  margin-left: -5px;
+}
+
+/* Second flexbox container styles */
+.tech-stack-container > div {
+    /* Each container takes up 48% width */
+    width: 48%;
+}
+
+@media (max-width: 950px) {
+  /* On small screens, stack the flexboxes vertically */
+  .languages, .languages + div {
+    width: 100%;  /* Take full width on smaller screens */
+     /* Add space between the stacked containers */
+     background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
+  }
+
+  .tech-stack-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the containers are side by side */
+    gap: 60px;  /* Adds space between the flexboxes */
+    width: 90%;  /* Take up full width */
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    flex-direction: column;
+  }
+
+  .frame{
+    margin-bottom: 100px;
+  }
+
+  .tech-stack-container > div {
+    /* Each container takes up 48% width */
+    width: 100%;
+}
+
+
+
+}
+
+@media (max-width: 600px){
+  .top-chart{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: start;
+    
+  }
+  
+  .bottom-chart{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .languages {
+    background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
+    padding: 10px 0px 10px 20px;
+    width: 40%;  /* Each flexbox takes 48% of the container's width */
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+  }
+  
+}
+
+.express{
+  margin-left: -20px;
 }

@@ -167,6 +167,8 @@ a.active {
     bottom: 0;
     z-index: 995;
     background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s 0.1s backwards;
+    
   }
 
 

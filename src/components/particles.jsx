@@ -59,7 +59,7 @@ const ParticlesComponent = (props) => {
           }
         },
         "opacity": {
-          "value": 0.4,
+          "value": 0.6,
           "random": true,
           "anim": {
             "enable": true,
