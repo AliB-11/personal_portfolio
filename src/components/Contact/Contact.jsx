@@ -1,6 +1,6 @@
 import './index.scss'
 import MainNavBar from '../mainNavBar'
-import PageHeader from '../headers/pageHeader'
+import PageHeader from '../headers/PageHeader'
 import { FaLinkedin} from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import { TfiEmail } from "react-icons/tfi";

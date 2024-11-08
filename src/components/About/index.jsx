@@ -1,6 +1,6 @@
 import './index.scss'
 import MainNavBar from '../mainNavBar'
-import PageHeader from '../headers/pageHeader';
+import PageHeader from '../headers/PageHeader';
 import { FaNode, FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";

@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 import MainNavBar from '../mainNavBar'
-import PageHeader from '../headers/pageHeader'
+import PageHeader from '../headers/PageHeader'
 import robotProject from '../../assets/images/robot.png'
 import movie from '../../assets/images/movie.png'
 import umbrella from '../../assets/images/umbrella.png'
