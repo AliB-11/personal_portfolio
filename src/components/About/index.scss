@@ -46,6 +46,7 @@
 
 
 .tech-stack-container {
+  margin-top: 15px;
   display: flex;
   justify-content: space-between; /* Ensures the containers are side by side */
   gap: 20px;  /* Adds space between the flexboxes */
@@ -107,6 +108,8 @@
 }
 
 .skills-title{
+  margin-top: 20px;
+  
   position: absolute;
   top: 50%;
   left: 5%;
@@ -121,22 +124,26 @@
   align-items: center;
   display: flex;
   justify-content: center; 
-
-  top: 25%;
+  flex-direction: row;
+  top: 22%;
   left: 5%;
-  right: 40%;  
-  gap: 30px;
+  right: 10%;  
+  gap: 200px;
   margin-bottom: 20px;
   margin-top: 10px;
   color: rgba(196, 196, 196, 0.87);
 }
 
+.profileImage{
+  height: 200px;
+  border-radius: 30%;
+}
 .introduction{
   font-size: 14px;
   font-family: 'Open Sans';
   margin-bottom: 20px;
 }
-@media (max-width: 950px) {
+@media (max-width: 1025px) {
   /* On small screens, stack the flexboxes vertically */
   .languages, .languages + div {
     width: 100%;  /* Take full width on smaller screens */
@@ -174,7 +181,7 @@
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 900px){
   .top-chart{
     display: flex;
     flex-direction: row;
@@ -182,6 +189,20 @@
     justify-content: center;
     align-items: start;
     
+  }
+
+  .skills-title{
+    position: absolute;
+    top: 65%;
+  }
+
+  .tech-stack-container {
+    margin-top: 80px; /* Push tech stack section further down */
+    margin-bottom: 10px;
+    position: absolute; /* Ensure it's not absolutely positioned */
+    top: 70%; /* Reset the top position */
+    flex-direction: column; /* Stack the tech stack elements vertically */
+    gap: 40px; /* Adjust spacing between the sections */
   }
   
   .bottom-chart{
@@ -200,4 +221,68 @@
 
 .express{
   margin-left: -20px;
+}
+
+
+@media (max-width: 800px) {
+  .about-me {
+    top: 25%;
+    right: 5%;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    gap: 10px; /* Adjust gap between elements */
+  }
+  
+  .skills-title{
+    position: absolute;
+    top: 85%;
+  }
+
+  .tech-stack-container {
+    margin-top: 80px; /* Push tech stack section further down */
+    position: absolute; /* Ensure it's not absolutely positioned */
+    top: 90%; /* Reset the top position */
+    flex-direction: column; /* Stack the tech stack elements vertically */
+    gap: 40px; /* Adjust spacing between the sections */
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .about-me {
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    gap: 5px; /* Adjust gap between elements */
+  }
+  
+  .skills-title{
+    position: absolute;
+    top: 95%;
+  }
+
+  .tech-stack-container {
+    margin-top: 80px; /* Push tech stack section further down */
+    position: absolute; /* Ensure it's not absolutely positioned */
+    top: 97%; /* Reset the top position */
+    flex-direction: column; /* Stack the tech stack elements vertically */
+    gap: 40px; /* Adjust spacing between the sections */
+  }
+}
+
+@media (max-width: 600px) {
+ 
+  
+  .skills-title{
+    position: absolute;
+    top: 105%;
+  }
+
+  .tech-stack-container {
+    margin-top: 80px; /* Push tech stack section further down */
+    position: absolute; /* Ensure it's not absolutely positioned */
+    top: 109%; /* Reset the top position */
+    flex-direction: column; /* Stack the tech stack elements vertically */
+    gap: 40px; /* Adjust spacing between the sections */
+  }
 }

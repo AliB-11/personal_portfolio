@@ -107,7 +107,7 @@ a.active {
 @media (max-width: 768px) {
   .hamburger-icon, .close-icon{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 2.5%;
     background-color: transparent;
     color: white;
@@ -170,6 +170,8 @@ a.active {
     animation: fadeIn 0.3s 0.1s backwards;
     
   }
+
+
 
 
 

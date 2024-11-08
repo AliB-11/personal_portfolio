@@ -133,3 +133,80 @@ a.active {
   }
 
 }
+
+@media (max-width: 768px) { 
+  .main-nav-buttons{
+    display: none;
+    
+  }
+  .nav-bar-holder{
+    z-index: 1;
+  }
+  .main-nav-bar{
+    z-index: 1;
+  }
+
+  .hamburger-icon, .close-icon{
+    display: block;
+    position: fixed;
+    top: 2.5%;
+    background-color: transparent;
+    color: white;
+    right: 2%;
+    border-style: none;
+    z-index: 999;
+  }
+
+ 
+
+  .wrappers{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    
+    
+  }
+
+  .navigation-button{
+    
+    
+    display: flex;
+    z-index: 997;
+    padding: 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    list-style-type: none;
+    
+    
+  }
+
+  .nav-label{ 
+    z-index: 997;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 55px;
+    margin-right: 20px;
+    align-items: center;
+    
+   
+   
+    
+  }
+
+  .hamburger-background{
+    position: fixed; /* Position it fixed to cover the entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 995;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s 0.1s backwards;
+    
+  }
+}
