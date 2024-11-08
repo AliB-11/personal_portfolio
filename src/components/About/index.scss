@@ -53,6 +53,7 @@
   position: absolute;
   top: 60%;
   left: 5%;
+  margin-bottom: 40px;
   
 }
 
@@ -64,8 +65,8 @@
   box-sizing: border-box;  /* Ensure padding doesn't affect width */
 }
 
-.subtitle {
-  margin-bottom: 35px;
+.subcodetitle {
+  margin-bottom: 20px;
   font-size: 23px;
   color: #e6ab24;
 }
@@ -105,6 +106,36 @@
     width: 48%;
 }
 
+.skills-title{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color:#e6ab24;
+  font-family: 'Poppins';
+  font-size: 28px;
+  font-weight: 250;
+}
+
+.about-me{
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+
+  top: 25%;
+  left: 5%;
+  right: 40%;  
+  gap: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: rgba(196, 196, 196, 0.87);
+}
+
+.introduction{
+  font-size: 14px;
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+}
 @media (max-width: 950px) {
   /* On small screens, stack the flexboxes vertically */
   .languages, .languages + div {
@@ -113,7 +144,13 @@
      background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
   }
 
+  .skills-title{
+    margin-top: 40px;
+  }
+
   .tech-stack-container {
+    margin-top: 100px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between; /* Ensures the containers are side by side */
     gap: 60px;  /* Adds space between the flexboxes */

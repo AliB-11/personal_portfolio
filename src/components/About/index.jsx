@@ -24,7 +24,7 @@ const About = () => {
       <div className='skills-title'></div>
       <div className='tech-stack-container'> 
         <div className='languages'>
-            <div className='subtitle'>Languages</div> 
+            <div className='subcodetitle'>Languages</div> 
             <div className='coding-chart'>
                <div className='top-chart'>
                   <div className='code'>
@@ -50,7 +50,7 @@ const About = () => {
         </div>
 
         <div className='languages frame'>
-            <div className='subtitle'>Framworks/Libraries</div> 
+            <div className='subcodetitle'>Framworks/Libraries</div> 
             <div className='coding-chart'>
                <div className='top-chart'>
                   <div className='code'>
