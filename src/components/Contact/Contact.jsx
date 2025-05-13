@@ -10,8 +10,8 @@ const Contact = () => {
   return (
 
       <div className='about-page'> 
+          <MainNavBar/>
           <div className="fade">
-            <MainNavBar/>
           <div className="text-zone">
             <PageHeader>Contact</PageHeader>
           </div>

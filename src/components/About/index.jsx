@@ -9,7 +9,7 @@ import { FaReact } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
-import profileImage from '../../assets/images/profileImage.jpg'
+import profileImage from '../../assets/images/profileImage.png'
 
 
 const About = () => {
@@ -17,8 +17,8 @@ const About = () => {
   
   return (
     <div className='about-page'> 
+     <MainNavBar/>
       <div className="fade">
-        <MainNavBar/>
          <div className="text-zone">
           <PageHeader>About</PageHeader>
         </div>

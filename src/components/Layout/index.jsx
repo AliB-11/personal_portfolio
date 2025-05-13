@@ -12,7 +12,7 @@ const Layout = () => {
       <ParticlesComponent id='particles'></ParticlesComponent>
       <div className='footer'>
         <div className='footer-text'> 
-         &#169; Ali Bandali 2024, <span className='footer-rights'>All rights reserved</span>
+         &#169; Ali Bandali 2025, <span className='footer-rights'>All rights reserved</span>
         </div>
       </div>
       <div className="page">

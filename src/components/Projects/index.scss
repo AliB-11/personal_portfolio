@@ -1,88 +1,211 @@
 
+// .projects-section h2 {
+//   text-align: center;
+//   font-size: 2.5rem;
+//   margin-bottom: 30px;
+// }
+
+// /* Flexbox container for project cards */
+// .projects-container {
+//   position: absolute;
+//   left: 0%;
+//   right: 0%;
+//   top: 25%;
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 65px;                
+//   justify-content: center;  
+//   max-width: 1200px;        
+//   margin: 0 auto;         
+//   width: 100%;
+              
+//   box-sizing: border-box;    
+// }
+
+// /* Style for each project card */
+// .project-card {
+//   width: 100%;
+//   max-width: 350px; 
+//   background-color: rgba(255, 255, 255, 0.1);
+//   border-radius: 5px;
+//   overflow: hidden;
+//   text-align: center;
+//   color: #fff;
+//   text-decoration: none;
+//   transition: transform 0.3s ease-in-out;
+// }
+
+// .project-card img {
+//   width: 350px; 
+//   height: 350px; 
+//   object-fit: fill;  
+//   border-radius: 5px 5px 0 0;  
+// }
+
+// .project-card h3 {
+//   margin: 20px 0 10px;
+//   font-size: 1.5rem;
+// }
+
+// .project-title{
+//   margin-top: 10px;
+//   color: #e6ab24;
+//   font-style: 'Poppins';
+//   font-size: 20px;
+// }
+
+// .project-text{
+//   margin-top: 10px;
+//   margin-bottom: 25px;
+//   color: white;
+//   font-size: 12px;
+//   font-style: 'Poppins';
+// }
+
+// .project-card p {
+//   padding: 0 10px 20px;
+//   font-size: 1rem;
+//   color: #ddd;
+// }
+
+// /* Hover effect */
+// .project-card:hover {
+//   transform: translateY(-10px);
+// }
+
+// /* Responsive design for different screen sizes */
+// @media (max-width: 1024px) {
+//   .project-card {
+//     width: 45%; /* Adjust width for tablet */
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .project-card {
+//     width: 100%; /* Stack projects on mobile */
+//   }
+// }
+
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --orange: #e6ab24;
+}
+
+.projects-section {
+  color: var(--white);
+  padding: 200px 80px;
+}
+.projects-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .projects-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  color: var(--orange);
+  margin-bottom: 40px;
 }
 
-/* Flexbox container for project cards */
-.projects-container {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 25%;
-
+/* ————————————————————————
+   FLEX LAYOUT INSTEAD OF GRID
+   ———————————————————————— */
+.projects-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 65px;                
-  justify-content: center;  
-  max-width: 1200px;        
-  margin: 0 auto;         
-  width: 100%;
-              
-  box-sizing: border-box;    
+  flex-wrap: wrap;           /* allow wrapping onto new rows */
+  justify-content: center;   /* center every row, full or partial */
+  gap: 50px;
+  margin-top: -20px;
 }
 
-/* Style for each project card */
+/* ————————————————————————
+   CARD STYLING (fixed width)
+   ———————————————————————— */
 .project-card {
-  width: 100%;
-  max-width: 350px; 
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  background: #111;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
   overflow: hidden;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  transition: transform 0.3s ease-in-out;
-}
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
 
-.project-card img {
-  width: 350px; 
-  height: 350px; 
-  object-fit: fill;  
-  border-radius: 5px 5px 0 0;  
+  /* NEW: make each card exactly 300px wide */
+  flex: 0 0 330px;
+  max-width: 330px;
+  
+ 
 }
-
-.project-card h3 {
-  margin: 20px 0 10px;
-  font-size: 1.5rem;
-}
-
-.project-title{
-  margin-top: 10px;
-  color: #e6ab24;
-  font-style: 'Poppins';
-  font-size: 20px;
-}
-
-.project-text{
-  margin-top: 10px;
-  margin-bottom: 25px;
-  color: white;
-  font-size: 12px;
-  font-style: 'Poppins';
-}
-
-.project-card p {
-  padding: 0 10px 20px;
-  font-size: 1rem;
-  color: #ddd;
-}
-
-/* Hover effect */
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-/* Responsive design for different screen sizes */
-@media (max-width: 1024px) {
-  .project-card {
-    width: 45%; /* Adjust width for tablet */
-  }
+/* Image spans full width */
+.project-card img {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px; /* you can shorthand this if you like */
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 768px) {
-  .project-card {
-    width: 100%; /* Stack projects on mobile */
-  }
+/* Title flex */
+.project-card .title-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 8px; /* optional: give a bit of breathing room */
+}
+.project-card .title-flex .project-title {
+  color: var(--orange);
+  font-size: 15px;
+  font-family: 'Poppins';
+  letter-spacing: normal;
+}
+
+/* Info block */
+.project-info {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 16px 16px;
+}
+.git {
+  color:  #e6ab24;
+  margin-right: 10px;
+}
+
+/* Description & tech */
+.project-info .text {
+  display: flex;
+  flex-direction: column;
+}
+.project-info .description {
+  font-size: .9rem;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+.project-info .tech {
+  font-size: .85rem;
+  font-style: italic;
+  color: #ccc;
+  margin: 0;
+}
+
+/* Image wrapper */
+.img-wrap {
+  padding: 10px;
+  overflow: hidden;
+  height: 220px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
