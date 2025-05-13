@@ -66,7 +66,7 @@ const Projects = () => {
 
            <div className="project-title">3 bit digital to analog converter</div>
 
-             <a href="https://github.com/yourusername/memory‑lane"
+             <a href="https://github.com/AliB-11/Digital-Analog-Converter"
              className="github-link"
              target="_blank" rel="noopener">
              <IoLogoGithub size={30}  className='git'/>
