@@ -10,6 +10,8 @@ import liDAR from '../../assets/images/LiDAR1.png'
 import { IoLogoGithub } from "react-icons/io";
 import { PiLinkSimple } from "react-icons/pi";
 import DAC from '../../assets/images/DAC.png'
+import tilt from '../tilt'
+import Tilt from '../tilt'
 
 const Projects = () => {
   return (
@@ -28,7 +30,17 @@ const Projects = () => {
       
       <div className="projects-grid">
      
-      <div className="project-card">
+      <Tilt className="project-card"
+      
+        options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  
+  >
         <div class="img-wrap">
         <img src={liDAR} alt="Memory Lane screenshot"/> 
         </div>
@@ -48,17 +60,26 @@ const Projects = () => {
         <div className="project-info">
           <div className="text">
             <p className="description">
-           An embedded 3D mapping system using an MSP432E401Y and VL53L1X ToF sensor on a stepper motor to perform vertical 360° scans and stream point-cloud data to a PC for real-time visualization.
+           An embedded 3D mapping system using an MSP432E401Y micrcontroller and ToF sensor to perform vertical 360° scans and stream data to a PC for real-time visualization.
             </p>
             <p className="tech">
               Tech: C, Matlab, Arm Cortex M4
             </p>
           </div>
         </div>
-      </div>
+      </Tilt>
 
 
-           <div className="project-card">
+           <Tilt className="project-card"
+            options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  
+           >
         <div class="img-wrap">
         <img src={DAC} alt="Memory Lane screenshot"/> 
         </div>
@@ -78,17 +99,26 @@ const Projects = () => {
         <div className="project-info">
           <div className="text">
             <p className="description">
-              A 3-bit Digital-to-Analog Converter (DAC) that uses a binary-weighted resistor network (R, 2R, 4R) to convert three digital input signals of distinct frequencies (1 kHz, 500 Hz, and 250 Hz) into a corresponding analog staircase waveform. 
+              A 3-bit Digital-to-Analog Converter that uses a binary-weighted resistor network to convert three digital input signals into a corresponding analog staircase waveform. 
             </p>
             <p className="tech">
               Components: op-amp, resistors
             </p>
           </div>
         </div>
-      </div>
+      </Tilt>
 
 
-           <div className="project-card">
+           <Tilt className="project-card"
+           
+            options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  >
         <div class="img-wrap">
         <img src={pacman} alt="Memory Lane screenshot"/> 
         </div>
@@ -115,10 +145,20 @@ const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Tilt>
 
 
-           <div className="project-card">
+           <Tilt className="project-card"
+           
+            options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  
+  >
         <div class="img-wrap">
         <img src={movie} alt="Memory Lane screenshot"/> 
         </div>
@@ -145,10 +185,19 @@ const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Tilt>
 
 
-           <div className="project-card">
+           <Tilt className="project-card"
+           
+            options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  >
         <div class="img-wrap">
         <img src={umbrella} alt="Memory Lane screenshot"/> 
         </div>
@@ -175,7 +224,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Tilt>
 
       </div>
 

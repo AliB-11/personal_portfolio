@@ -130,17 +130,23 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform .2s, box-shadow .2s;
+  transition: transform .2s, box-shadow .4s;
+
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+  will-change: transform;
 
   /* NEW: make each card exactly 300px wide */
   flex: 0 0 330px;
   max-width: 330px;
+
+  min-height:380px;
   
  
 }
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    box-shadow: 4px 12px 12px  rgba(255, 179, 0, 0.4);
+
 }
 
 /* Image spans full width */
@@ -185,12 +191,12 @@
   flex-direction: column;
 }
 .project-info .description {
-  font-size: .9rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   margin: 0 0 8px;
 }
 .project-info .tech {
-  font-size: .85rem;
+  font-size: .95rem;
   font-style: italic;
   color: #ccc;
   margin: 0;

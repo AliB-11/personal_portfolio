@@ -183,7 +183,7 @@
 
 }
 
-@media (max-width: 900px){
+@media (max-width: 850px){
   .top-chart{
     display: flex;
     flex-direction: row;
@@ -195,14 +195,14 @@
 
   .skills-title{
     position: absolute;
-    top: 65%;
+    top: 55%;
   }
 
   .tech-stack-container {
     margin-top: 80px; /* Push tech stack section further down */
     margin-bottom: 10px;
     position: absolute; /* Ensure it's not absolutely positioned */
-    top: 70%; /* Reset the top position */
+    top: 65%; /* Reset the top position */
     flex-direction: column; /* Stack the tech stack elements vertically */
     gap: 40px; /* Adjust spacing between the sections */
   }
@@ -237,17 +237,24 @@
   
   .skills-title{
     position: absolute;
-    top: 85%;
+    top: 65%;
   }
 
   .tech-stack-container {
     margin-top: 80px; /* Push tech stack section further down */
     position: absolute; /* Ensure it's not absolutely positioned */
-    top: 90%; /* Reset the top position */
+    top: 70%; /* Reset the top position */
     flex-direction: column; /* Stack the tech stack elements vertically */
     gap: 40px; /* Adjust spacing between the sections */
     margin-bottom: 20px;
   }
+
+  .profileImage{
+  height: 180px;
+  object-fit: fit;
+  width: 180px;
+  border-radius: 50%;
+}
 }
 
 
@@ -270,6 +277,8 @@
     flex-direction: column; /* Stack the tech stack elements vertically */
     gap: 40px; /* Adjust spacing between the sections */
   }
+
+ 
 }
 
 @media (max-width: 600px) {
@@ -277,14 +286,21 @@
   
   .skills-title{
     position: absolute;
-    top: 105%;
+    top: 72%;
   }
 
   .tech-stack-container {
     margin-top: 80px; /* Push tech stack section further down */
     position: absolute; /* Ensure it's not absolutely positioned */
-    top: 109%; /* Reset the top position */
+    top: 78%; /* Reset the top position */
     flex-direction: column; /* Stack the tech stack elements vertically */
     gap: 40px; /* Adjust spacing between the sections */
   }
+
+  .profileImage{
+  height: 180px;
+  object-fit: fit;
+  width: 180px;
+  border-radius: 50%;
+}
 }
