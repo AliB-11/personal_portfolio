@@ -282,6 +282,14 @@
 }
 
 @media (max-width: 600px) {
+
+    .about-me {
+    top: 20%;
+    right: 5%;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    gap: 10px; /* Adjust gap between elements */
+  }
  
   
   .skills-title{
