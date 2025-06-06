@@ -62,9 +62,9 @@ const Projects = () => {
             <p className="description">
            An embedded 3D mapping system using an MSP432E401Y micrcontroller and ToF sensor to perform vertical 360° scans and stream data to a PC for real-time visualization.
             </p>
-            <p className="tech">
-              Tech: C, Matlab, Arm Cortex M4
-            </p>
+            <span className="tech">
+               C/C++ | MATLAB | Arm Cortex M4
+            </span>
           </div>
         </div>
       </Tilt>
@@ -102,7 +102,7 @@ const Projects = () => {
               A 3-bit Digital-to-Analog Converter that uses a binary-weighted resistor network to convert three digital input signals into a corresponding analog staircase waveform. 
             </p>
             <p className="tech">
-              Components: op-amp, resistors
+              Op amps | Resistors | AD3
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ const Projects = () => {
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title">Pacman Maze</div>
+           <div className="project-title">Pacman Pathfinder</div>
 
              <a href="https://github.com/AliB-11/PacmanMaze"
              className="github-link"
@@ -141,7 +141,7 @@ const Projects = () => {
               A Java Swing application simulating a Pac-Man-style maze game with event-driven robot navigation, custom keybindings, and modular panel rendering.
             </p>
             <p className="tech">
-              Tech: JavaSwing, Java
+              JavaSwing | Java | JUnit
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ const Projects = () => {
               Movie database website leveraging external API's to retreive and filter up to date movie data. 
             </p>
             <p className="tech">
-              Tech: Axios, Tailwind CSS, Typescript, React
+              Axios | Tailwind | Typescript | React
             </p>
           </div>
         </div>
@@ -220,7 +220,7 @@ const Projects = () => {
               A modular, weather-resistant umbrella holder engineered for universal wheelchair armrest compatibility, featuring multi-axis adjustability and a secure, tool-free mounting system.
             </p>
             <p className="tech">
-              Tech: 3D printing, Inventor
+              3D printing | Inventor
             </p>
           </div>
         </div>

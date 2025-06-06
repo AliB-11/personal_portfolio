@@ -188,6 +188,7 @@
 /* Description & tech */
 .project-info .text {
   display: flex;
+   align-items: flex-start; 
   flex-direction: column;
 }
 .project-info .description {
@@ -196,10 +197,15 @@
   margin: 0 0 8px;
 }
 .project-info .tech {
-  font-size: .95rem;
-  font-style: italic;
-  color: #ccc;
-  margin: 0;
+  display: inline; /* or inline-block if you need padding */
+  width: auto; /* ensures no full-line stretching */
+  font-size: 11px;;
+
+  color: #000000; /* Optional: better contrast */
+  font-weight: 500;
+  background-color: #e6ab24;
+  padding: 1px 5px; /* Optional: adds breathing room */
+  margin-top: 10px;
 }
 
 /* Image wrapper */
