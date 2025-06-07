@@ -12,6 +12,7 @@ import { PiLinkSimple } from "react-icons/pi";
 import DAC from '../../assets/images/DAC.png'
 import tilt from '../tilt'
 import Tilt from '../tilt'
+import maze from '../../assets/images/maze_resized.png';
 
 const Projects = () => {
   return (
@@ -71,45 +72,6 @@ const Projects = () => {
 
 
            <Tilt className="project-card"
-            options={{
-    max: 15,             // very subtle angle  
-    perspective: 1000,  
-    scale: 1.01,        // almost no scale  
-    speed: 400,  
-    easing: "cubic-bezier(.05,.95,.5,1)",  
-    glare: true     
-  }}  
-           >
-        <div class="img-wrap">
-        <img src={DAC} alt="Memory Lane screenshot"/> 
-        </div>
-        <div className='title-flex'> 
-
-           <div className="project-title">3 bit digital to analog converter</div>
-
-             <a href="https://github.com/AliB-11/Digital-Analog-Converter"
-             className="github-link"
-             target="_blank" rel="noopener">
-             <IoLogoGithub size={30}  className='git'/>
-          </a>
-
-
-        </div>
-       
-        <div className="project-info">
-          <div className="text">
-            <p className="description">
-              A 3-bit Digital-to-Analog Converter that uses a binary-weighted resistor network to convert three digital input signals into a corresponding analog staircase waveform. 
-            </p>
-            <p className="tech">
-              Op amps | Resistors | AD3
-            </p>
-          </div>
-        </div>
-      </Tilt>
-
-
-           <Tilt className="project-card"
            
             options={{
     max: 15,             // very subtle angle  
@@ -146,6 +108,47 @@ const Projects = () => {
           </div>
         </div>
       </Tilt>
+
+
+        <Tilt className="project-card"
+           
+            options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  
+  >
+        <div class="img-wrap">
+        <img src={maze} alt="Memory Lane screenshot"/> 
+        </div>
+        <div className='title-flex'> 
+
+           <div className="project-title">Kruskal Maze Generator</div>
+
+             <a href="https://github.com/AliB-11/Maze_generator"
+             className="github-link"
+             target="_blank" rel="noopener">
+             <IoLogoGithub size={30}  className='git'/>
+          </a>
+
+
+        </div>
+       
+        <div className="project-info">
+          <div className="text">
+            <p className="description">
+              Generating perfect mazes using Kruskal's algorithm implemented in C and visualization using Python's PIL (Pillow) library. The generated maze is a minimum spanning tree over a grid with no cycles. 
+            </p>
+            <p className="tech">
+              C/C++ | CMake | Python | Pillow (PIL)
+            </p>
+          </div>
+        </div>
+      </Tilt>
+
 
 
            <Tilt className="project-card"
@@ -221,6 +224,45 @@ const Projects = () => {
             </p>
             <p className="tech">
               3D printing | Inventor
+            </p>
+          </div>
+        </div>
+      </Tilt>
+
+
+              <Tilt className="project-card"
+            options={{
+    max: 15,             // very subtle angle  
+    perspective: 1000,  
+    scale: 1.01,        // almost no scale  
+    speed: 400,  
+    easing: "cubic-bezier(.05,.95,.5,1)",  
+    glare: true     
+  }}  
+           >
+        <div class="img-wrap">
+        <img src={DAC} alt="Memory Lane screenshot"/> 
+        </div>
+        <div className='title-flex'> 
+
+           <div className="project-title">3 bit digital to analog converter</div>
+
+             <a href="https://github.com/AliB-11/Digital-Analog-Converter"
+             className="github-link"
+             target="_blank" rel="noopener">
+             <IoLogoGithub size={30}  className='git'/>
+          </a>
+
+
+        </div>
+       
+        <div className="project-info">
+          <div className="text">
+            <p className="description">
+              A 3-bit Digital-to-Analog Converter that uses a binary-weighted resistor network to convert three digital input signals into a corresponding analog staircase waveform. 
+            </p>
+            <p className="tech">
+              Op amps | Resistors | AD3
             </p>
           </div>
         </div>
