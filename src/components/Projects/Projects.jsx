@@ -1,18 +1,15 @@
-import React from 'react'
-import './index.scss'
-import MainNavBar from '../mainNavBar'
-import PageHeader from '../headers/PageHeader'
-import robotProject from '../../assets/images/robot.png'
-import movie from '../../assets/images/movie.png'
-import umbrella from '../../assets/images/umbrella.png'
-import pacman from '../../assets/images/pacman.png'
-import liDAR from '../../assets/images/LiDAR1.png'
-import { IoLogoGithub } from "react-icons/io";
-import { PiLinkSimple } from "react-icons/pi";
+import { IoLogoGithub } from "react-icons/io"
+import { PiLinkSimple } from "react-icons/pi"
 import DAC from '../../assets/images/DAC.png'
-import tilt from '../tilt'
+import liDAR from '../../assets/images/LiDAR1.png'
+import maze from '../../assets/images/maze_resized.png'
+import pacman from '../../assets/images/pacman.png'
+import newMovie from '../../assets/images/Recommender.png'
+import umbrella from '../../assets/images/umbrella.png'
+import PageHeader from '../headers/PageHeader'
+import MainNavBar from '../mainNavBar'
 import Tilt from '../tilt'
-import maze from '../../assets/images/maze_resized.png';
+import './index.scss'
 
 const Projects = () => {
   return (
@@ -121,7 +118,7 @@ const Projects = () => {
     glare: true     
   }}  
   >
-        <div class="img-wrap">
+        <div className="img-wrap">
         <img src={maze} alt="Memory Lane screenshot"/> 
         </div>
         <div className='title-flex'> 
@@ -163,11 +160,11 @@ const Projects = () => {
   }}  
   >
         <div class="img-wrap">
-        <img src={movie} alt="Memory Lane screenshot"/> 
+        <img src={newMovie} alt="Memory Lane screenshot"/> 
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title">Movie filtering Website</div>
+           <div className="project-title">AI Movie Recommender</div>
 
              <a href="https://github.com/AliB-11/Movie-Store"
              className="github-link"
@@ -181,10 +178,10 @@ const Projects = () => {
         <div className="project-info">
           <div className="text">
             <p className="description">
-              Movie database website leveraging external API's to retreive and filter up to date movie data. 
+             Ai movie recommender that uses scikit-learn’s TF-IDF vectorization and cosine similarity for content analysis, and collaborative filtering on user rating pattern to deliver personalized movie recommendations.
             </p>
             <p className="tech">
-              Axios | Tailwind | Typescript | React
+               Typescript | React | FastAPI | Python | Scikit-Learn
             </p>
           </div>
         </div>

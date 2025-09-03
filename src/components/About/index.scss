@@ -12,38 +12,21 @@
 }
 
 
-.fade{
-  animation: fadeIn 1s 0.2s backwards;
-}
-
-.image{
-  height: 40px;
-  width: 40px;
-}
-
-.coding-chart{
-  display: flex;
-  flex-direction: row;
-  gap: 150px;
-}
-
-
-.top-chart{
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-  justify-content: center;
-  align-items: start;
+.text-zone-1{
+   position: absolute;
+    left: 5%;
+    top: 52%;
+    width: 35%;
+    vertical-align: middle;
+    max-height: 90%;
+    display: table-cell;
   
 }
 
-.bottom-chart{
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
+
+.fade{
+  animation: fadeIn 1s 0.2s backwards;
 }
-
-
 
 .tech-stack-container {
   margin-top: 15px;
@@ -58,48 +41,13 @@
   
 }
 
-/* Apply background color only to the first flexbox */
-.languages {
-  background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
-  padding: 40px 0px 40px 40px;
-  width: 40%;  /* Each flexbox takes 48% of the container's width */
-  box-sizing: border-box;  /* Ensure padding doesn't affect width */
-}
-
 .subcodetitle {
   margin-bottom: 20px;
-  font-size: 23px;
+  margin-top: 15px;
+  font-size: 22px;
   color: #e6ab24;
 }
 
-.coding-chart {
-  display: flex;
-  flex-direction: column;  /* Stack the items vertically */
-  gap: 20px;
-  align-items: start;
-  justify-content: start;
-}
-
-.label {
-  color: white;
-  font-size: 16px;
-}
-
-.code {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 25px;
-}
-
-.mongo {
-  margin-left: -5px;
-}
-
-.mongol {
-  margin-left: -5px;
-}
 
 /* Second flexbox container styles */
 .tech-stack-container > div {
@@ -108,15 +56,15 @@
 }
 
 .skills-title{
-  margin-top: 20px;
+  
   
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 5%;
   color:#e6ab24;
   font-family: 'Poppins';
-  font-size: 28px;
-  font-weight: 250;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .about-me{
@@ -145,170 +93,105 @@
   font-family: 'Open Sans';
   margin-bottom: 20px;
 }
-@media (max-width: 1025px) {
-  /* On small screens, stack the flexboxes vertically */
-  .languages, .languages + div {
-    width: 100%;  /* Take full width on smaller screens */
-     /* Add space between the stacked containers */
-     background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
-  }
 
-  .skills-title{
-    margin-top: 40px;
-  }
-
-  .tech-stack-container {
-    margin-top: 100px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between; /* Ensures the containers are side by side */
-    gap: 60px;  /* Adds space between the flexboxes */
-    width: 90%;  /* Take up full width */
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    flex-direction: column;
-  }
-
-  .frame{
-    margin-bottom: 100px;
-  }
-
-  .tech-stack-container > div {
-    /* Each container takes up 48% width */
-    width: 100%;
+.navigate-buttons,
+.languages.frame {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping to new rows */
+  gap: 20px;                /* spacing between each skill box */
 }
 
-
-
+/* Each skill box */
+.link-skills {
+  display: flex;
+  flex-direction: column;   /* icon on top, text below */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  min-width: 80px;
+   background-color: rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media (max-width: 850px){
-  .top-chart{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: center;
-    align-items: start;
-    
-  }
-
-  .skills-title{
-    position: absolute;
-    top: 55%;
-  }
-
-  .tech-stack-container {
-    margin-top: 80px; /* Push tech stack section further down */
-    margin-bottom: 10px;
-    position: absolute; /* Ensure it's not absolutely positioned */
-    top: 65%; /* Reset the top position */
-    flex-direction: column; /* Stack the tech stack elements vertically */
-    gap: 40px; /* Adjust spacing between the sections */
-  }
-  
-  .bottom-chart{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-  }
-  .languages {
-    background-color: rgba(255, 255, 255, 0.12);  /* Light background color */
-    padding: 10px 0px 10px 20px;
-    width: 40%;  /* Each flexbox takes 48% of the container's width */
-    box-sizing: border-box;  /* Ensure padding doesn't affect width */
-  }
+/* Hover effect */
+.link-skills:hover {
+  transform: translateY(-5px);
+  // box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   
 }
 
-.express{
-  margin-left: -20px;
+
+/* Skill name text */
+.link-skills div {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.python_img {
+  object-fit: cover;
+  height: 35px;
+  width: 35px
 }
 
 
-@media (max-width: 800px) {
-  .about-me {
-    top: 25%;
-    right: 5%;
-    flex-direction: column; /* Change to column layout */
-    align-items: center;
-    gap: 10px; /* Adjust gap between elements */
-  }
+.docker {
+  color:#1D63ED
+}
+.javascript {
+  color: #eed953
+}
+
+.Cpp{
+  color: #5599ff;
+}
+
+.mongo{
+  color: #00ED64
+}
+.react{
+  color: #61DAFB
+}
+
+.node{
+  color: #6cc24a
+}
+
+.spring{
+  color: #6DB33F
+}
+
+// .link-skills{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 30%;
+//   height: 60px;
+//   width: 60px;
+//   color: white;
+//   background-color: rgba(255, 255, 255, 0.2);
+//   margin-right: 20px;
+//   transition: background-color .4s;
   
-  .skills-title{
-    position: absolute;
-    top: 65%;
-  }
-
-  .tech-stack-container {
-    margin-top: 80px; /* Push tech stack section further down */
-    position: absolute; /* Ensure it's not absolutely positioned */
-    top: 70%; /* Reset the top position */
-    flex-direction: column; /* Stack the tech stack elements vertically */
-    gap: 40px; /* Adjust spacing between the sections */
-    margin-bottom: 20px;
-  }
-
-  .profileImage{
-  height: 180px;
-  object-fit: fit;
-  width: 180px;
-  border-radius: 50%;
-}
-}
+// }
 
 
-@media (max-width: 600px) {
-  .about-me {
-    flex-direction: column; /* Change to column layout */
-    align-items: center;
-    gap: 5px; /* Adjust gap between elements */
-  }
+// .navigate-buttons{
+//   height: 50px;  
+//   width: 100%;
+//   display: flex;
+//   list-style-type: none;
+//   margin-right: auto;
+//   padding: 0;
+//   flex: auto;
+//   align-items: center;
+//   justify-content: start;
+//   white-space: nowrap;
+//   position: relative;
   
-  .skills-title{
-    position: absolute;
-    top: 95%;
-  }
-
-  .tech-stack-container {
-    margin-top: 80px; /* Push tech stack section further down */
-    position: absolute; /* Ensure it's not absolutely positioned */
-    top: 97%; /* Reset the top position */
-    flex-direction: column; /* Stack the tech stack elements vertically */
-    gap: 40px; /* Adjust spacing between the sections */
-  }
-
- 
-}
-
-@media (max-width: 600px) {
-
-    .about-me {
-    top: 20%;
-    right: 5%;
-    flex-direction: column; /* Change to column layout */
-    align-items: center;
-    gap: 10px; /* Adjust gap between elements */
-  }
- 
-  
-  .skills-title{
-    position: absolute;
-    top: 72%;
-  }
-
-  .tech-stack-container {
-    margin-top: 80px; /* Push tech stack section further down */
-    position: absolute; /* Ensure it's not absolutely positioned */
-    top: 78%; /* Reset the top position */
-    flex-direction: column; /* Stack the tech stack elements vertically */
-    gap: 40px; /* Adjust spacing between the sections */
-  }
-
-  .profileImage{
-  height: 180px;
-  object-fit: fit;
-  width: 180px;
-  border-radius: 50%;
-}
-}
+// }
