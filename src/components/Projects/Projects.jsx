@@ -1,15 +1,16 @@
 import { IoLogoGithub } from "react-icons/io"
-import { PiLinkSimple } from "react-icons/pi"
+
 import DAC from '../../assets/images/DAC.png'
 import liDAR from '../../assets/images/LiDAR1.png'
 import maze from '../../assets/images/maze_resized.png'
 import pacman from '../../assets/images/pacman.png'
 import newMovie from '../../assets/images/Recommender.png'
-import umbrella from '../../assets/images/umbrella.png'
+
 import PageHeader from '../headers/PageHeader'
 import MainNavBar from '../mainNavBar'
 import Tilt from '../tilt'
 import './index.scss'
+import cpu from '../../assets/images/CPU.png'
 
 const Projects = () => {
   return (
@@ -199,16 +200,16 @@ const Projects = () => {
     glare: true     
   }}  >
         <div class="img-wrap">
-        <img src={umbrella} alt="Memory Lane screenshot"/> 
+        <img src={cpu} alt="cpu"/> 
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title"> Adjustable Wheelchair Umbrella Holder</div>
+           <div className="project-title"> 16 bit Hack Computer</div>
 
-             <a href="https://subdued-opinion-1a5.notion.site/Project-4-Power-in-community-09b6e2cdbae14d169af2c9bb3e8d6b83"
+             <a href="https://github.com/AliB-11/16-bit-Hack-Computer"
              className="github-link"
              target="_blank" rel="noopener">
-             <PiLinkSimple size={30}  className='git'/>
+            <IoLogoGithub size={30}  className='git'/>
           </a>
 
 
@@ -217,10 +218,10 @@ const Projects = () => {
         <div className="project-info">
           <div className="text">
             <p className="description">
-              A modular, weather-resistant umbrella holder engineered for universal wheelchair armrest compatibility, featuring multi-axis adjustability and a secure, tool-free mounting system.
+              This project implements the 16-bit Hack computer from the nand2tetris course, which includes a working CPU, ALU, and a two-pass assembler which together can run the hack assembly language 
             </p>
             <p className="tech">
-              3D printing | Inventor
+              Assembly | RTL design | C++ | HDL
             </p>
           </div>
         </div>

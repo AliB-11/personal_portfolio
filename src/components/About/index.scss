@@ -165,33 +165,80 @@
   color: #6DB33F
 }
 
-// .link-skills{
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 30%;
-//   height: 60px;
-//   width: 60px;
-//   color: white;
-//   background-color: rgba(255, 255, 255, 0.2);
-//   margin-right: 20px;
-//   transition: background-color .4s;
-  
-// }
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
 
 
-// .navigate-buttons{
-//   height: 50px;  
-//   width: 100%;
-//   display: flex;
-//   list-style-type: none;
-//   margin-right: auto;
-//   padding: 0;
-//   flex: auto;
-//   align-items: center;
-//   justify-content: start;
-//   white-space: nowrap;
-//   position: relative;
+
+
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* Tech stack container */
+  .tech-stack-container {
+    position: static; /* remove absolute positioning */
+    flex-direction: column; /* stack languages & tools */
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .tech-stack-container > div {
+    width: 100%; /* full width for each column */
+  }
+
+  .navigate-buttons,
+  .languages.frame {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .link-skills {
+    min-width: 70px;
+    padding: 8px;
+  }
+
+  .link-skills div {
+    font-size: 13px;
+  }
+
+  .subcodetitle {
+    text-align: center;
+    font-size: 20px;
+  }
+
+    /* Push everything down and stack naturally */
+  .about-page {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Text zone (header "About") */
+ 
+
+  /* About me section */
+  .about-me {
+    position: static;        /* remove absolute */
+    display: flex;
+    flex-direction: column;  /* stack intro + profile image */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;               /* spacing between text and image */
+    margin-bottom: 30px;
+  }
+
   
-// }
+
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
