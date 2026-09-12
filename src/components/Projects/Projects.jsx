@@ -146,7 +146,7 @@ const Projects = () => {
   }}  
   >
         <div class="img-wrap">
-          <img src="/mini-risc-cpu.svg" alt="Mini RISC CPU datapath illustration"/> 
+          <img src={`${import.meta.env.BASE_URL}mini-risc-cpu.svg`} alt="Mini RISC CPU datapath illustration"/> 
         </div>
         <div className='title-flex'> 
 
@@ -181,7 +181,7 @@ const Projects = () => {
     glare: true     
   }}  >
         <div class="img-wrap">
-        <img src="/minios-kernel.svg" alt="MiniOS x86 kernel terminal illustration"/> 
+        <img src={`${import.meta.env.BASE_URL}minios-kernel.svg`} alt="MiniOS x86 kernel terminal illustration"/> 
         </div>
         <div className='title-flex'> 
 
