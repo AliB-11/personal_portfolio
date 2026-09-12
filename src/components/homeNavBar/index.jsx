@@ -1,7 +1,7 @@
 import './index.scss'
 import { NavLink } from 'react-router-dom'
 import { BsHouse, BsFileEarmark } from "react-icons/bs";
-import { LuUser2, LuMail} from "react-icons/lu";
+import { LuUser, LuMail } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 import {useState} from 'react'; 
 import { FiMenu } from "react-icons/fi";
@@ -38,7 +38,7 @@ const HomeNavBar = () => {
             <li>
               <NavLink className="about-link" exact="true" activeclassname="active" to="/about">
                 <div className="nav-label">
-                  <LuUser2 color='white' size={20} className='nav-icons'/>
+                  <LuUser color='white' size={20} className='nav-icons'/>
                   <span className='headers'>About</span>
                 </div>
               </NavLink>
@@ -87,7 +87,7 @@ const HomeNavBar = () => {
         <li>
           <NavLink className="about-link" exact="true" activeclassname="active" to="/about">
             <div className="nav-label">
-              <LuUser2 color='white' size={20} className='nav-icons'/>
+              <LuUser color='white' size={20} className='nav-icons'/>
               <span className='headers'>About</span>
             </div>
           </NavLink>

@@ -2,9 +2,7 @@ import { IoLogoGithub } from "react-icons/io"
 
 import DAC from '../../assets/images/DAC.png'
 import liDAR from '../../assets/images/LiDAR1.png'
-import maze from '../../assets/images/maze_resized.png'
-import pacman from '../../assets/images/pacman.png'
-import newMovie from '../../assets/images/Recommender.png'
+import PCB from '../../assets/images/PCB.png'
 
 import PageHeader from '../headers/PageHeader'
 import MainNavBar from '../mainNavBar'
@@ -17,17 +15,12 @@ const Projects = () => {
     <section className="projects-section">
       <MainNavBar/>
 
-    
-      <div className="fade">
-      <div className='about-page'> 
-        <div className="text-zone">
+      <div className="fade projects-page">
+        <div className="projects-header">
           <PageHeader>Projects</PageHeader>
         </div>
-      </div>
 
-
-      
-      <div className="projects-grid">
+        <div className="projects-grid">
      
       <Tilt className="project-card"
       
@@ -80,28 +73,24 @@ const Projects = () => {
     glare: true     
   }}  >
         <div class="img-wrap">
-        <img src={pacman} alt="Memory Lane screenshot"/> 
+          <img className="pcb-image" src={PCB} alt="Buck converter and signal conditioning PCB design"/> 
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title">Pacman Pathfinder</div>
-
-             <a href="https://github.com/AliB-11/PacmanMaze"
-             className="github-link"
-             target="_blank" rel="noopener">
-             <IoLogoGithub size={30}  className='git'/>
-          </a>
-
+            <div className="project-title">Buck Converter &amp; Signal Conditioning PCB Designs</div>
+            <a href="https://github.com/your-username/your-repository"
+              className="github-link"
+              target="_blank" rel="noopener noreferrer">
+              <IoLogoGithub size={30} className="git" />
+            </a>
 
         </div>
        
         <div className="project-info">
           <div className="text">
-            <p className="description">
-              A Java Swing application simulating a Pac-Man-style maze game with event-driven robot navigation, custom keybindings, and modular panel rendering.
-            </p>
+            <p className="description">Designed and tested a second-order signal-conditioning filter and 5 V/1 A buck converter, using PSpice and KiCad to validate performance and component choices.</p>
             <p className="tech">
-              JavaSwing | Java | JUnit
+              PSpice | Circuit Design | KiCad
             </p>
           </div>
         </div>
@@ -120,28 +109,24 @@ const Projects = () => {
   }}  
   >
         <div className="img-wrap">
-        <img src={maze} alt="Memory Lane screenshot"/> 
+          <img src={cpu} alt="16-bit Hack Computer illustration"/> 
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title">Kruskal Maze Generator</div>
-
-             <a href="https://github.com/AliB-11/Maze_generator"
-             className="github-link"
-             target="_blank" rel="noopener">
-             <IoLogoGithub size={30}  className='git'/>
-          </a>
-
+            <div className="project-title">16-bit Hack Computer</div>
+            <a href="https://github.com/your-username/your-repository"
+              className="github-link"
+              target="_blank" rel="noopener noreferrer">
+              <IoLogoGithub size={30} className="git" />
+            </a>
 
         </div>
        
         <div className="project-info">
           <div className="text">
-            <p className="description">
-              Generating perfect mazes using Kruskal's algorithm implemented in C and visualization using Python's PIL (Pillow) library. The generated maze is a minimum spanning tree over a grid with no cycles. 
-            </p>
+            <p className="description">Implemented the 16-bit Hack computer from nand2tetris, including its CPU, ALU, memory, and two-pass assembler for running Hack assembly programs.</p>
             <p className="tech">
-              C/C++ | CMake | Python | Pillow (PIL)
+              Assembly | RTL Design | C++ | HDL
             </p>
           </div>
         </div>
@@ -161,28 +146,24 @@ const Projects = () => {
   }}  
   >
         <div class="img-wrap">
-        <img src={newMovie} alt="Memory Lane screenshot"/> 
+          <img src="/mini-risc-cpu.svg" alt="Mini RISC CPU datapath illustration"/> 
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title">AI Movie Recommender</div>
-
-             <a href="https://github.com/AliB-11/Movie-Store"
-             className="github-link"
-             target="_blank" rel="noopener">
-             <IoLogoGithub size={30}  className='git'/>
-          </a>
-
+            <div className="project-title">Mini RISC CPU</div>
+            <a href="https://github.com/your-username/your-repository"
+              className="github-link"
+              target="_blank" rel="noopener noreferrer">
+              <IoLogoGithub size={30} className="git" />
+            </a>
 
         </div>
        
         <div className="project-info">
           <div className="text">
-            <p className="description">
-             Ai movie recommender that uses scikit-learn’s TF-IDF vectorization and cosine similarity for content analysis, and collaborative filtering on user rating pattern to deliver personalized movie recommendations.
-            </p>
+            <p className="description">Designed a simple Verilog RISC processor with a complete datapath, control unit, memory subsystem, and I/O ports, then verified instruction execution in ModelSim.</p>
             <p className="tech">
-               Typescript | React | FastAPI | Python | Scikit-Learn
+              Verilog | ModelSim | RTL
             </p>
           </div>
         </div>
@@ -200,28 +181,24 @@ const Projects = () => {
     glare: true     
   }}  >
         <div class="img-wrap">
-        <img src={cpu} alt="cpu"/> 
+        <img src="/minios-kernel.svg" alt="MiniOS x86 kernel terminal illustration"/> 
         </div>
         <div className='title-flex'> 
 
-           <div className="project-title"> 16 bit Hack Computer</div>
-
-             <a href="https://github.com/AliB-11/16-bit-Hack-Computer"
+           <div className="project-title">MiniOS: x86 Kernel with Preemptive Task Scheduling</div>
+           <a href="https://github.com/your-username/your-repository"
              className="github-link"
-             target="_blank" rel="noopener">
-            <IoLogoGithub size={30}  className='git'/>
-          </a>
-
+             target="_blank" rel="noopener noreferrer">
+             <IoLogoGithub size={30} className="git" />
+           </a>
 
         </div>
        
         <div className="project-info">
           <div className="text">
-            <p className="description">
-              This project implements the 16-bit Hack computer from the nand2tetris course, which includes a working CPU, ALU, and a two-pass assembler which together can run the hack assembly language 
-            </p>
+            <p className="description">Built a small x86 kernel with VGA and UART interfaces, interrupt handling, virtual memory allocators, and a priority-based preemptive scheduler debugged through QEMU and GDB.</p>
             <p className="tech">
-              Assembly | RTL design | C++ | HDL
+              Rust | Assembly | C/C++ | QEMU
             </p>
           </div>
         </div>
@@ -266,16 +243,9 @@ const Projects = () => {
         </div>
       </Tilt>
 
+        </div>
       </div>
-
-      
-      
-
-        
-
-       
-      </div>
-  </section>
+    </section>
   )
 }
 

@@ -96,33 +96,26 @@
 
 .projects-section {
   color: var(--white);
-  padding: 200px 80px;
+  padding: 90px 5% 60px;
+  box-sizing: border-box;
 }
-.projects-section .container {
-  max-width: 1000px;
+
+.projects-page {
+  max-width: 1300px;
   margin: 0 auto;
 }
-.projects-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--orange);
-  margin-bottom: 40px;
+
+.projects-header {
+  margin-bottom: 24px;
 }
 
-/* ————————————————————————
-   FLEX LAYOUT INSTEAD OF GRID
-   ———————————————————————— */
 .projects-grid {
   display: flex;
-  flex-wrap: wrap;           /* allow wrapping onto new rows */
-  justify-content: center;   /* center every row, full or partial */
-  gap: 50px;
-  margin-top: -20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
-/* ————————————————————————
-   CARD STYLING (fixed width)
-   ———————————————————————— */
 .project-card {
   background: #111;
   border: 2px solid var(--orange);
@@ -130,43 +123,36 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform .2s, box-shadow .4s;
-
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
   will-change: transform;
-
-  /* NEW: make each card exactly 300px wide */
   flex: 0 0 330px;
   max-width: 330px;
-
-  min-height:380px;
-  
- 
+  min-height: 380px;
 }
+
 .project-card:hover {
   transform: translateY(-4px);
-    box-shadow: 4px 12px 12px  rgba(255, 179, 0, 0.4);
-
+  box-shadow: 4px 12px 12px rgba(255, 179, 0, 0.4);
 }
 
-/* Image spans full width */
 .project-card img {
   display: block;
   width: auto;
   height: auto;
   object-fit: cover;
-  border-radius: 7px; /* you can shorthand this if you like */
+  border-radius: 7px;
   margin: 0;
   padding: 0;
 }
 
-/* Title flex */
 .project-card .title-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px 8px; /* optional: give a bit of breathing room */
+  padding: 0 16px 8px;
 }
+
 .project-card .title-flex .project-title {
   color: var(--orange);
   font-size: 15px;
@@ -174,41 +160,41 @@
   letter-spacing: normal;
 }
 
-/* Info block */
 .project-info {
   display: flex;
   align-items: flex-start;
   padding: 0 16px 16px;
 }
+
 .git {
-  color:  #e6ab24;
+  color: #e6ab24;
   margin-right: 10px;
 }
 
-/* Description & tech */
 .project-info .text {
   display: flex;
-   align-items: flex-start; 
+  align-items: flex-start;
   flex-direction: column;
 }
+
 .project-info .description {
-  font-size: 1.1rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.5;
   margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.9);
 }
+
 .project-info .tech {
-  display: inline; /* or inline-block if you need padding */
-  width: auto; /* ensures no full-line stretching */
-  font-size: 11px;;
-
-  color: #000000; /* Optional: better contrast */
-  font-weight: 500;
+  display: inline-block;
+  font-size: 11px;
+  color: #000000;
+  font-weight: 600;
   background-color: #e6ab24;
-  padding: 1px 5px; /* Optional: adds breathing room */
+  padding: 4px 8px;
   margin-top: 10px;
+  border-radius: 4px;
 }
 
-/* Image wrapper */
 .img-wrap {
   padding: 10px;
   overflow: hidden;
@@ -216,8 +202,38 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+.img-wrap .pcb-image {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 110px 18px 50px;
+  }
+
+  .projects-grid {
+    gap: 24px;
+  }
+
+  .project-card {
+    flex-basis: min(100%, 330px);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-card .title-flex {
+    padding: 0 12px 8px;
+  }
+
+  .project-info {
+    padding: 0 12px 14px;
+  }
+}
+

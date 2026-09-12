@@ -8,15 +8,14 @@ import { BsGlobe } from "react-icons/bs";
 
 const Contact = () => {
   return (
-
-      <div className='about-page'> 
+      <div className='contact-page'>
           <MainNavBar/>
           <div className="fade">
-          <div className="text-zone">
-            <PageHeader>Contact</PageHeader>
-          </div>
-        <div className='contact-container'>
-          <div className='contact-box'>
+            <div className="text-zone contact-header-zone">
+              <PageHeader>Contact</PageHeader>
+            </div>
+            <div className='contact-container'>
+              <div className='contact-box'>
             <div className='contact-text'> 
               <div className='contact-header'> 
                 <div className='email-title'> Email  </div>
@@ -46,12 +45,10 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-        </div>
-      
-     
+      </div>
   )
 }
 
