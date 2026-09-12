@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title desc">
+  <title id="title">Buck converter and signal conditioning circuit</title>
+  <desc id="desc">A stylized circuit board with a filter waveform and power converter symbols.</desc>
+  <rect width="800" height="460" fill="#101820"/>
+  <path d="M0 60h800M0 120h800M0 180h800M0 240h800M0 300h800M0 360h800M0 420h800M80 0v460M160 0v460M240 0v460M320 0v460M400 0v460M480 0v460M560 0v460M640 0v460M720 0v460" stroke="#1b3b43" stroke-width="1"/>
+  <rect x="70" y="75" width="660" height="310" rx="18" fill="#172a2f" stroke="#e6ab24" stroke-width="4"/>
+  <path d="M110 230h85l25-65 35 130 35-130 35 65h55" fill="none" stroke="#57d3c5" stroke-width="6"/>
+  <path d="M380 230h52l28-55 35 110 35-110 28 55h100" fill="none" stroke="#e6ab24" stroke-width="6"/>
+  <circle cx="110" cy="230" r="9" fill="#e6ab24"/><circle cx="690" cy="230" r="9" fill="#57d3c5"/>
+  <text x="110" y="125" fill="#fff" font-family="sans-serif" font-size="28" font-weight="700">BUCK + FILTER LAB</text>
+  <text x="110" y="335" fill="#9ab0ad" font-family="monospace" font-size="20">PSpice / KiCad / 5V 1A</text>
+</svg>

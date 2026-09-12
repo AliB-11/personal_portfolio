@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title desc">
+  <title id="title">MiniOS x86 kernel</title>
+  <desc id="desc">A stylized operating system kernel terminal with scheduler lanes.</desc>
+  <rect width="800" height="460" fill="#101a18"/>
+  <rect x="70" y="65" width="660" height="315" rx="14" fill="#152823" stroke="#72d9c1" stroke-width="4"/>
+  <circle cx="105" cy="100" r="8" fill="#e6ab24"/><circle cx="132" cy="100" r="8" fill="#72d9c1"/><circle cx="159" cy="100" r="8" fill="#d76b6b"/>
+  <text x="105" y="160" fill="#72d9c1" font-family="monospace" font-size="27">&gt; minios booted</text>
+  <text x="105" y="205" fill="#fff" font-family="monospace" font-size="23">irq: timer  keyboard  uart</text>
+  <path d="M105 265h155m25 0h120m25 0h170M105 310h90m25 0h170m25 0h185" stroke="#e6ab24" stroke-width="12" stroke-linecap="round"/>
+  <text x="105" y="355" fill="#a9c5b7" font-family="monospace" font-size="18">RUST / ASM / QEMU / SCHEDULER</text>
+</svg>

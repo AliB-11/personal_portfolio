@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title desc">
+  <title id="title">Mini RISC CPU</title>
+  <desc id="desc">A stylized processor datapath with registers, control, and memory blocks.</desc>
+  <rect width="800" height="460" fill="#17151f"/>
+  <text x="90" y="92" fill="#fff" font-family="sans-serif" font-size="32" font-weight="700">MINI RISC CPU</text>
+  <g fill="#28233a" stroke="#e6ab24" stroke-width="3"><rect x="90" y="150" width="165" height="100" rx="10"/><rect x="315" y="130" width="170" height="140" rx="12"/><rect x="545" y="150" width="165" height="100" rx="10"/></g>
+  <text x="125" y="207" fill="#ffd66d" font-family="monospace" font-size="22">REGISTERS</text><text x="355" y="207" fill="#ffd66d" font-family="monospace" font-size="22">CONTROL</text><text x="584" y="207" fill="#ffd66d" font-family="monospace" font-size="22">MEMORY</text>
+  <path d="M255 200h60m170 0h60M175 250v65h450v-65" fill="none" stroke="#72d9c1" stroke-width="5"/><path d="M300 185l15 15-15 15m185-15l15 15-15 15" fill="none" stroke="#72d9c1" stroke-width="5"/>
+  <text x="90" y="370" fill="#aca2bc" font-family="monospace" font-size="20">VERILOG  /  MODELSIM  /  RTL</text>
+</svg>
