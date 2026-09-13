@@ -78,7 +78,7 @@ const Projects = () => {
         <div className='title-flex'> 
 
             <div className="project-title">Buck Converter &amp; Signal Conditioning PCB Designs</div>
-            <a href="https://github.com/your-username/your-repository"
+            <a href="https://github.com/AliB-11/Signal-Conditioning-Circuit-and-Buck-Converter-PCB-Designs"
               className="github-link"
               target="_blank" rel="noopener noreferrer">
               <IoLogoGithub size={30} className="git" />
@@ -114,7 +114,7 @@ const Projects = () => {
         <div className='title-flex'> 
 
             <div className="project-title">16-bit Hack Computer</div>
-            <a href="https://github.com/your-username/your-repository"
+            <a href="https://github.com/AliB-11/16-bit-Hack-Computer"
               className="github-link"
               target="_blank" rel="noopener noreferrer">
               <IoLogoGithub size={30} className="git" />
@@ -151,7 +151,7 @@ const Projects = () => {
         <div className='title-flex'> 
 
             <div className="project-title">Mini RISC CPU</div>
-            <a href="https://github.com/your-username/your-repository"
+            <a href="https://github.com/AliB-11/Mini-Risc-CPU"
               className="github-link"
               target="_blank" rel="noopener noreferrer">
               <IoLogoGithub size={30} className="git" />
@@ -186,7 +186,7 @@ const Projects = () => {
         <div className='title-flex'> 
 
            <div className="project-title">MiniOS: x86 Kernel with Preemptive Task Scheduling</div>
-           <a href="https://github.com/your-username/your-repository"
+           <a href="https://github.com/AliB-11/Rust-OS"
              className="github-link"
              target="_blank" rel="noopener noreferrer">
              <IoLogoGithub size={30} className="git" />
